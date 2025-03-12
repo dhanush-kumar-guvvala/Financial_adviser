@@ -23,6 +23,13 @@ from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 import io
 import re
+import os
+import subprocess
+
+# Install system dependencies (Tesseract OCR and Poppler)
+subprocess.run(["apt-get", "update"])
+subprocess.run(["apt-get", "install", "-y", "tesseract-ocr", "poppler-utils"])
+
 pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 
 # Attempt to import PDF libraries with error handling
