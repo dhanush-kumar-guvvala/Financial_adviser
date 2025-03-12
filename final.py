@@ -1,5 +1,11 @@
 import streamlit as st
 import streamlit as st
+import os
+import subprocess
+
+# Install system dependencies (Tesseract OCR and Poppler)
+subprocess.run(["apt-get", "update"])
+subprocess.run(["apt-get", "install", "-y", "tesseract-ocr", "poppler-utils"])
 import pytesseract
 import os
 import tempfile
