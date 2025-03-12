@@ -7,3 +7,9 @@ google-generativeai
 pillow
 reportlab
 pandas
+
+
+
+
+Tesseract OCR (Install & set path)
+Poppler for Windows (Extract & add bin folder to system PATH)
